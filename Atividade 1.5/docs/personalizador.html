@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação do Pacote Personalizador</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            color: #e74c3c;
+        }
+        .module {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Documentação do Pacote Personalizador</h1>
+    <p>O pacote <strong>personalizador</strong> fornece funcionalidades para formatação de texto utilizando a biblioteca <code>Rich</code>.</p>
+
+    <div class="module">
+        <h2>Módulo: <code>layout</code></h2>
+        <p>Funções para manipulação de layouts com Rich.</p>
+        <h3>Funções:</h3>
+        <ul>
+            <li>
+                <strong>layout_simples(texto, isArquivo=False)</strong><br>
+                Mostra o texto em um layout simples.
+            </li>
+            <li>
+                <strong>layout_complexo(texto, isArquivo=False)</strong><br>
+                Mostra o texto em um layout mais detalhado.
+            </li>
+        </ul>
+    </div>
+
+    <div class="module">
+        <h2>Módulo: <code>painel</code></h2>
+        <p>Funções para exibição de painéis com Rich.</p>
+        <h3>Funções:</h3>
+        <ul>
+            <li>
+                <strong>painel_simples(texto, isArquivo=False)</strong><br>
+                Mostra o texto em um painel simples.
+            </li>
+            <li>
+                <strong>painel_com_titulo(texto, isArquivo=False)</strong><br>
+                Mostra o texto em um painel com título e bordas coloridas.
+            </li>
+        </ul>
+    </div>
+
+    <div class="module">
+        <h2>Módulo: <code>progresso</code></h2>
+        <p>Funções para exibição de barras de progresso.</p>
+        <h3>Funções:</h3>
+        <ul>
+            <li>
+                <strong>barra_progresso_simples(texto, isArquivo=False)</strong><br>
+                Mostra uma barra de progresso simples.
+            </li>
+            <li>
+                <strong>progresso_com_mensagem(texto, isArquivo=False)</strong><br>
+                Mostra uma barra de progresso com uma mensagem personalizada.
+            </li>
+        </ul>
+    </div>
+
+    <div class="module">
+        <h2>Módulo: <code>estilo</code></h2>
+        <p>Funções para estilização de texto com Rich.</p>
+        <h3>Funções:</h3>
+        <ul>
+            <li>
+                <strong>texto_em_negrito(texto, isArquivo=False)</strong><br>
+                Mostra o texto em negrito.
+            </li>
+            <li>
+                <strong>texto_em_italico(texto, isArquivo=False)</strong><br>
+                Mostra o texto em itálico.
+            </li>
+        </ul>
+    </div>
+
+    <div class="module">
+        <h2>Script: <code>main.py</code></h2>
+        <p>Interface de linha de comando para executar funções dos módulos.</p>
+        <h3>Uso:</h3>
+        <pre>
+python main.py &lt;texto&gt; -m [layout|painel|progresso|estilo] -f &lt;função&gt; [-a]
+        </pre>
+        <p><strong>Opções:</strong></p>
+        <ul>
+            <li><code>-a</code>: Indica que o texto é um arquivo.</li>
+            <li><code>-m</code>: Escolhe o módulo (layout, painel, progresso, estilo).</li>
+            <li><code>-f</code>: Escolhe a função do módulo.</li>
+        </ul>
+    </div>
+</body>
+</html>
